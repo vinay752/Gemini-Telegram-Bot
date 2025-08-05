@@ -17,9 +17,7 @@ Translate text into multiple languages using Gemini.
 Spanish: Hola, ¿cómo estás?
 French: Bonjour, comment ça va ?
 
-markdown
-Copy
-Edit
+
 
 ### 🖼️ /imgen  
 Generate images from text prompts using Gemini's experimental image generation API.  
@@ -36,3 +34,30 @@ The bot listens for specific keywords (e.g., "nikkalu") and responds intelligent
 - Google Generative AI Python SDK  
 - python-dotenv  
 - asyncio and telegram.ext  
+
+🛡️ Command Summary
+Command	Description
+/gemini	Ask any question for a Gemini-powered answer
+/translate	Translate to one or more languages
+/imgen	Generate images from text prompts
+
+📷 Sample Output
+Q: /gemini What are black holes?
+A: "Black holes are regions in space where gravity is so strong that nothing, not even light, can escape."
+
+Translate:
+/translate  Telugu | How are you?
+Output: ఎలా ఉన్నారు?
+
+
+Image Generation:
+/imagen create an oil painting of large wooden ship from 1600s sailing over the Pacific ocean with full of crowd/imgen create an oil painting of large wooden ship from 1600s sailing over the Pacific ocean with full of crowd
+(Bot returns image)
+<img width="1024" height="764" alt="image" src="https://github.com/user-attachments/assets/9d1b1788-570c-4ac1-97e9-4170a5e2d35e" />
+
+📌 Notes
+Gemini Flash model is used for fast and cost-efficient responses.
+
+Image generation feature is experimental and may vary by region.
+
+Contextual replies can be extended by editing the keyword handling logic.
