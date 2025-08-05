@@ -55,9 +55,7 @@ Image Generation:
 (Bot returns image)
 <img width="1024" height="764" alt="image" src="https://github.com/user-attachments/assets/9d1b1788-570c-4ac1-97e9-4170a5e2d35e" />
 
-📌 Notes
-Gemini Flash model is used for fast and cost-efficient responses.
-
-Image generation feature is experimental and may vary by region.
-
-Contextual replies can be extended by editing the keyword handling logic.
+##📌 Notes
+-Gemini Flash model is used for fast and cost-efficient responses.
+-Image generation feature is experimental and may vary by region.
+-Contextual replies can be extended by editing the keyword handling logic.
