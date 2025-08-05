@@ -58,10 +58,10 @@ async def translate(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         await update.message.reply_text(f"{language.capitalize()}: {response.text}")
 
-async def imgen(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def imagen(update: Update, context: ContextTypes.DEFAULT_TYPE):
     contents = ' '.join(context.args)
     if not contents:
-        await update.message.reply_text("Usage: /imgen Create an image of an orange cat in a cricket stadium")
+        await update.message.reply_text("Usage: /imagen Create an image of an orange cat in a cricket stadium")
         return
 
     await update.message.reply_text("Generating image... please wait 🧠🖼️")
@@ -85,7 +85,7 @@ async def imgen(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Add handlers
 app.add_handler(CommandHandler("gemini", gemini))
 app.add_handler(CommandHandler("translate", translate))
-app.add_handler(CommandHandler("imgen", imgen))
+app.add_handler(CommandHandler("imgen", imagen))
 
 # Run bot
 app.run_polling()
